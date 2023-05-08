@@ -4,7 +4,7 @@
 	<form action = "{{ route ('login') }}" method = "post">
 			@csrf
 		<div class = "p-3">
-					@include('components.input', ['type'=> 'email', 'class' => 'col' ,'name' => 'email', 'label' =>'Email', 'value' => "admin@gmail.com])
+					@include('components.input', ['type'=> 'email', 'class' => 'col' ,'name' => 'email', 'label' =>'Email', 'value' => "admin@gmail.com"])
 			</div>
 			<div class = "p-3">
 					@include('components.input', ['type'=> 'password', 'class' => 'col' ,'name' => 'password', 'label' =>'Mot de passe', 'value' => 'admin'])
