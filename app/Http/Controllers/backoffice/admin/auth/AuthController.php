@@ -13,7 +13,6 @@ use Illuminate\View\View;
 class AuthController extends Controller
 {
 	public function login() : View {
-		$user = User::find(1);
 		$data = Constante::createData (
 			"Se connecter", "user", $user, 'pages.backoffice.auth.login', Constante::DEFAULT_NAVBAR
 		);
