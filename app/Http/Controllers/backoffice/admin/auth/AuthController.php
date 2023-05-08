@@ -14,7 +14,7 @@ class AuthController extends Controller
 {
 	public function login() : View {
 		$data = Constante::createData (
-			"Se connecter", "user", $user, 'pages.backoffice.auth.login', Constante::DEFAULT_NAVBAR
+			"Se connecter", "", null, 'pages.backoffice.auth.login', Constante::DEFAULT_NAVBAR
 		);
 		return \view (Constante::DEFAULT_PAGE, $data);
 	}
