@@ -1,7 +1,7 @@
 <div class = "mt-4 container">
 	<h1>@yield('title')</h1>
 	
-	<form action = "{{ route ('login') }}" method = "post">
+	<form action = "{{ route ('login') }}" method = "post" autocomplete="on">
 			@csrf
 		<div class = "p-3">
 					@include('components.input', ['type'=> 'email', 'class' => 'col' ,'name' => 'email', 'label' =>'Email', 'value' => "admin@gmail.com"])
